@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câmera com Filtros em Tempo Real</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <!-- Área de exibição do vídeo -->
+        <div class="video-container">
+            <video id="webcam" autoplay playsinline muted></video>
+            <div id="status-message" class="status-message">Câmera Desligada</div>
+        </div>
+        
+        <!-- Controles principais -->
+        <div class="controls">
+            <button id="btn-toggle-camera" class="btn primary-btn">Ligar câmera</button>
+        </div>
+
+        <!-- Opções de filtros -->
+        <div class="filters-container">
+            <p>Filtros de Imagem:</p>
+            <div class="filter-buttons">
+                <button class="btn filter-btn" data-filter="none">Normal</button>
+                <button class="btn filter-btn" data-filter="grayscale(100%)">Preto e Branco</button>
+                <button class="btn filter-btn" data-filter="invert(100%)">Inverter Cores</button>
+                <button class="btn filter-btn" data-filter="sepia(100%)">Sépia</button>
+                <button class="btn filter-btn" data-filter="hue-rotate(90deg)">Neon</button>
+                <button class="btn filter-btn" data-filter="blur(4px)">Desfoque</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
